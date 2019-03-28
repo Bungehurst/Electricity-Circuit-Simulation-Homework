@@ -1,0 +1,4 @@
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\opamp.lib, offset=50478, size=1178
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\di.lib, offset=116307, size=600
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\diz.lib, offset=236698, size=647
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\templates.lib, offset=13100, size=8774

@@ -1,0 +1,202 @@
+
+**** 11/25/13 11:14:09 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e21\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms 0 0.01m 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P108-2-4-1
+V_V10         N17611 0 15
+R_R20         N17549 N17667  10k  
+V_V4         N13319 N130851 1Vdc
+R_R21         0 N17667  4k  
+R_R17         N13384 N14719  10k  
+X_U2         0 N17549 N17611 N174833 N17667 uA741
+V_V11         N175111 0  
++SIN 0 10m 50 0 0 0
+V_V7         N130851 0  
++SIN 0 10m 50 0 0 0
+V_V5         N129902 0 15Vdc
+V_V8         N17543 N175111 1Vdc
+R_R19         N17543 N17549  1k  
+R_R18         0 N14719  4k  
+X_U1         N13384 0 N129902 N14097 N14719 uA741
+V_V6         N14097 0 -15
+R_R16         N13319 N13384  1k  
+V_V9         N174833 0 -15Vdc
+
+**** RESUMING bias.cir ****
+.END
+
+**** 11/25/13 11:14:09 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e21\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.dx         X_U2.dy         X_U1.dx         X_U1.dy         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 11/25/13 11:14:09 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e21\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.qx         X_U1.qx         
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 11/25/13 11:14:09 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e21\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N13319)    1.0000 (N13384)-72.01E-06 (N14097)  -15.0000 (N14719)  -10.0000     
+
+(N17543)    1.0000 (N17549) 72.00E-06 (N17611)   15.0000 (N17667)   -9.9984     
+
+(X_U1.6) 992.6E-06 (X_U1.7)  -10.1750 (X_U1.8)  -10.1750 (X_U1.9)    0.0000     
+
+(X_U2.6) 992.5E-06 (X_U2.7)  -10.1730 (X_U2.8)  -10.1730 (X_U2.9)    0.0000     
+
+(N129902)   15.0000                   (N130851)    0.0000                       
+
+(N174833)  -15.0000                   (N175111)    0.0000                       
+
+(X_U1.10)    -.6077                   (X_U1.11)   14.9600                       
+
+(X_U1.12)   14.9600                   (X_U1.13)    -.5938                       
+
+(X_U1.14)    -.5938                   (X_U1.53)   14.0000                       
+
+(X_U1.54)  -14.0000                   (X_U1.90)   -3.5000                       
+
+(X_U1.91)   40.0000                   (X_U1.92)  -40.0000                       
+
+(X_U1.99)    0.0000                   (X_U2.10)    -.6076                       
+
+(X_U2.11)   14.9600                   (X_U2.12)   14.9600                       
+
+(X_U2.13)    -.5937                   (X_U2.14)    -.5938                       
+
+(X_U2.53)   14.0000                   (X_U2.54)  -14.0000                       
+
+(X_U2.90)   -3.4995                   (X_U2.91)   40.0000                       
+
+(X_U2.92)  -40.0000                   (X_U2.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V10       -1.667E-03
+    V_V4        -1.000E-03
+    V_V11       -9.999E-04
+    V_V7        -1.000E-03
+    V_V5        -1.667E-03
+    V_V8        -9.999E-04
+    V_V6         1.667E-03
+    V_V9         1.667E-03
+    X_U2.vb      9.925E-09
+    X_U2.vc      2.400E-11
+    X_U2.ve      4.554E-12
+    X_U2.vlim   -3.499E-03
+    X_U2.vlp    -4.350E-11
+    X_U2.vln    -3.650E-11
+    X_U1.vb      9.926E-09
+    X_U1.vc      2.400E-11
+    X_U1.ve      4.552E-12
+    X_U1.vlim   -3.500E-03
+    X_U1.vlp    -4.350E-11
+    X_U1.vln    -3.650E-11
+
+    TOTAL POWER DISSIPATION   1.02E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/25/13 11:14:09 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e21\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.19
+

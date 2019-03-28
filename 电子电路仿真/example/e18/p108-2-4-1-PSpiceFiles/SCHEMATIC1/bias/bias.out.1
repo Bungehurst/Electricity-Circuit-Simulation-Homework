@@ -1,0 +1,189 @@
+
+**** 08/16/13 11:11:52 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\temp\example\e15\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN 40m 50ms 0 0.01m 
+.FOUR 1k 9 V([OUT]) 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P108-2-4-1
+V_V4         N00839 0  
++SIN 0 10m 1k 0 0 0
+R_R1         N00247 N00279  5.1k  
+R_R2         N00279 N00163  12k  
+R_R3         N04032 0  2.3k  
+C_C3         0 N04032  100u   
+X_Q1         N00247 N00163 N04032 awb2n3904 PARAMS:                            
++                 
+R_R5         N00163 0  5k  
+V_V1         N00279 0 12
+V_V3         N00839 N002370 0Vdc
+R_R4         0 OUT  5.1k  
+C_C1         N00247 OUT  10u   
+C_C2         N002370 N00163  10u   
+
+**** RESUMING bias.cir ****
+.END
+
+**** 08/16/13 11:11:52 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\temp\example\e15\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     
+               NPN             
+       LEVEL    1            
+          IS  172.800000E-18 
+          EG    1.206        
+          BF  254.395        
+          NF     .85         
+         VAF   10            
+         IKF     .016374     
+         ISE    9.974460E-15 
+          NE    1.20863      
+          BR     .1          
+          NR     .891964     
+         VAR    7.74046      
+         IKR     .163741     
+         ISC    9.974460E-15 
+          NC    2.84343      
+         ISS    0            
+          RB   28.3394       
+         RBM     .01         
+         IRB     .01         
+          RE    1.339110E-03 
+          RC    2.08353      
+         CJE    4.566140E-12 
+         VJE     .4          
+         MJE     .245712     
+         CJC    3.724850E-12 
+         VJC     .4          
+         MJC     .236002     
+        XCJC     .8          
+         CJS    0            
+         VJS     .75         
+         MJS     .5          
+          FC     .519152     
+          TF  481.412000E-12 
+         XTF     .9628       
+         VTF    9.52193      
+         ITF     .011333     
+          TR    1.303990E-06 
+         XTB    1.20888      
+         XTI    1.34879      
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 08/16/13 11:11:52 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\temp\example\e15\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (N00163)    3.4776 (N00247)    5.8029 (N00279)   12.0000     
+
+(N00839)    0.0000 (N04032)    2.8285 (N002370)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+    V_V1        -1.925E-03
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.31E-02  WATTS
+
+
+**** 08/16/13 11:11:52 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\temp\example\e15\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     FOURIER ANALYSIS                 TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+FOURIER COMPONENTS OF TRANSIENT RESPONSE V(OUT)
+
+
+
+ DC COMPONENT =   1.313924E-03
+
+ HARMONIC   FREQUENCY    FOURIER    NORMALIZED    PHASE        NORMALIZED
+    NO         (HZ)     COMPONENT    COMPONENT    (DEG)       PHASE (DEG)
+
+     1     1.000E+03    1.007E+00    1.000E+00   -1.755E+02    0.000E+00
+     2     2.000E+03    5.345E-02    5.307E-02    1.011E+02    4.521E+02
+     3     3.000E+03    1.231E-03    1.222E-03   -1.772E+02    3.492E+02
+     4     4.000E+03    2.677E-04    2.658E-04    1.093E+02    8.113E+02
+     5     5.000E+03    9.457E-06    9.389E-06    7.153E+01    9.490E+02
+     6     6.000E+03    5.559E-06    5.519E-06    9.243E+01    1.145E+03
+     7     7.000E+03    3.034E-06    3.012E-06    9.361E+01    1.322E+03
+     8     8.000E+03    4.835E-06    4.800E-06    8.456E+01    1.489E+03
+     9     9.000E+03    3.779E-06    3.751E-06    5.777E+01    1.637E+03
+
+
+     TOTAL HARMONIC DISTORTION =   5.308330E+00 PERCENT
+
+
+          JOB CONCLUDED
+
+**** 08/16/13 11:11:52 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\temp\example\e15\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .55
+

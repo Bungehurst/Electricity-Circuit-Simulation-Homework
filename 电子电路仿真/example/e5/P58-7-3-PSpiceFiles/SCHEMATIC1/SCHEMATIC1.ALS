@@ -1,0 +1,4 @@
+.ALIASES
+R_R1            R1(1=0 2=N00081 ) CN @P58-7-3.SCHEMATIC1(sch_1):I00036@ANALOG_P.r.Normal(chips)
+C_C1            C1(1=0 2=N00081 ) CN @P58-7-3.SCHEMATIC1(sch_1):I00061@ANALOG_P.c.Normal(chips)
+.ENDALIASES

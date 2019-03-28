@@ -1,0 +1,7 @@
+* source P63-7-3
+X_U5         0 N024071 Sw_tOpen PARAMS: tOpen=50m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+R_R1         N00544 N02589  20k  
+V_V1         N00544 0 10
+C_C1         N02589 0  0.1u IC=0  
+R_R6         N024071 N02589  30k  

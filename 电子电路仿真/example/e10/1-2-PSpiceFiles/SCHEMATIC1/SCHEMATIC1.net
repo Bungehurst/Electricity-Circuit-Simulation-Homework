@@ -1,0 +1,4 @@
+* source 1-2
+X_D2         VDIODE 0 awb1n4148 PARAMS:                
+R_R1         N00099 VDIODE  1000  
+V_V1         N00099 0 0Vdc

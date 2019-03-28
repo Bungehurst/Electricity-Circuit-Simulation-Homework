@@ -1,0 +1,5 @@
+* source 1-3
+I_I1         0 VBE DC 0Adc  
+Q_Q1         VOUT VBE 0 Q2N2222
+V_Vcc         N00135 0 10
+R_R2         VOUT N00135  10k  

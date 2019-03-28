@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-TEST14"  [ C:\example\e9\test14-pspicefiles\schematic1\test14.sim ] 
+
+** Creating circuit file "TEST14.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 1 10meg
+.STEP LIN PARAM Rsweep 1k 20k 5k 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

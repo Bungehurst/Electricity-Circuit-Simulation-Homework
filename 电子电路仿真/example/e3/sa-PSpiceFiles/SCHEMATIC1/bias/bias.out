@@ -1,0 +1,83 @@
+
+**** 05/02/10 21:20:40 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ F:\ORCAD\example\sa-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.0\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SA
+R_Ux         0 N00304  2  
+V_V1         N00311 N00304 4Vdc
+E_E1         0 N00559 0 N00304 5
+I_I1         N00331 0 DC 2Adc  
+R_R1         N00331 N00311  1  
+R_R2         N00311 N00559  3  
+
+**** RESUMING bias.cir ****
+.END
+
+**** 05/02/10 21:20:40 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ F:\ORCAD\example\sa-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00304)    4.0000 (N00311)    8.0000 (N00331)    6.0000 (N00559)   20.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         2.000E+00
+
+    TOTAL POWER DISSIPATION  -8.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/02/10 21:20:40 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ F:\ORCAD\example\sa-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

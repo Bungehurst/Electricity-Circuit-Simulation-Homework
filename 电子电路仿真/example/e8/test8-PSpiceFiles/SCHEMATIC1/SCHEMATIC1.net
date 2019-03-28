@@ -1,0 +1,4 @@
+* source TEST8
+R_R1         N02781 OUT  50k  
+C_C1         0 OUT  100n  
+V_V1         N02781 0 DC 0Vdc AC 1Vac 

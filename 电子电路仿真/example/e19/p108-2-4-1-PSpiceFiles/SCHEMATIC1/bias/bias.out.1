@@ -1,0 +1,48 @@
+
+**** 11/25/13 12:03:14 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e19\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN 40m 50ms 0 0.01m 
+.FOUR 1k 9 V([out]) 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P108-2-4-1
+E_DIFF1         N24901 0 VALUE {V(0,UN)}
+E_MULT1         N24919 0 VALUE {V(N24915)*V(N24901)}
+V_V4         N25782 0 1v
+V_CONST1         N24915 0 DC 1meg
+R_R16         N25782 UN  1k  
+E_LIMIT1         N24939 0 VALUE {LIMIT(V(N24919),-15,15)}
+R_Rid         0 UN  100k  
+R_Ro         N24939 VO  50  
+R_R17         UN VO  10k  
+C_C1         0 VO  318u   
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR -- Node out is undefined
+ERROR -- Node out is floating

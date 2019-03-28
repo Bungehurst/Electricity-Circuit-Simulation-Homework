@@ -1,0 +1,41 @@
+
+**** 05/02/10 21:19:36 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ F:\ORCAD\example\sa-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.0\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SA
+R_Ux         0 N00304  2  
+V_V1         N00311 N00304 4Vdc
+E_E1         N00304 0 N00559 0 5
+I_I1         N00331 0 DC 2Adc  
+R_R1         N00331 N00311  1  
+R_R2         N00311 N00559  3  
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR -- Less than 2 connections at node N00559

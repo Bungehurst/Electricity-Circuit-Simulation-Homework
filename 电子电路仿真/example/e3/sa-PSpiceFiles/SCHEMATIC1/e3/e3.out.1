@@ -1,0 +1,84 @@
+
+**** 08/04/13 16:29:29 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-e3"  [ d:\example\e3\sa-PSpiceFiles\SCHEMATIC1\e3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "e3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 1m 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SA
+V_V2         N05698 N05668 4Vdc
+I_I2         0 N05758 DC 2Adc  
+E_E2         N05863 0 N05668 0 5
+R_R3         N05758 N05698  1  
+R_R4         N05698 N05863  3  
+R_Ux1         0 N05668  2  
+
+**** RESUMING e3.cir ****
+.END
+
+**** 08/04/13 16:29:29 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-e3"  [ d:\example\e3\sa-PSpiceFiles\SCHEMATIC1\e3.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N05668)    -.8000 (N05698)    3.2000 (N05758)    5.2000 (N05863)   -4.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -4.000E-01
+
+    TOTAL POWER DISSIPATION   1.60E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/04/13 16:29:29 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-e3"  [ d:\example\e3\sa-PSpiceFiles\SCHEMATIC1\e3.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

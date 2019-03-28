@@ -1,0 +1,79 @@
+
+**** 05/06/10 09:29:08 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\MY pspice\2\p58-7-3-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of g:\OrCAD\OrCAD_10.0\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10u 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P58-7-3
+R_R1         0 N00081  1k  
+C_C1         0 N00081  1n IC=-10  
+
+**** RESUMING bias.cir ****
+.END
+
+**** 05/06/10 09:29:08 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\MY pspice\2\p58-7-3-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00081)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/06/10 09:29:08 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\MY pspice\2\p58-7-3-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

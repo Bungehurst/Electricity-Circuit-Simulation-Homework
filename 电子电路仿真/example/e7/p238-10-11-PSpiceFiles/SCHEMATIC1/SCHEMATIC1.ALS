@@ -1,0 +1,6 @@
+.ALIASES
+R_R1            R1(1=N00159 2=0 ) CN @P238-10-11.SCHEMATIC1(sch_1):I00036@ANALOG_P.r.Normal(chips)
+C_C1            C1(1=N00159 2=0 ) CN @P238-10-11.SCHEMATIC1(sch_1):I00061@ANALOG_P.c.Normal(chips)
+X_U1            U1(1=0 2=N00159 ) CN @P238-10-11.SCHEMATIC1(sch_1):I00100@ANL_MISC.Sw_tOpen.Normal(chips)
+I_I1            I1(+=0 -=N00159 ) CN @P238-10-11.SCHEMATIC1(sch_1):I00134@SOURCE.ISIN.Normal(chips)
+.ENDALIASES

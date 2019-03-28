@@ -1,0 +1,7 @@
+.ALIASES
+X_U5            U5(1=0 2=N024071 ) CN @P63-7-3.SCHEMATIC1(sch_1):INS2502@ANL_MISC.Sw_tOpen.Normal(chips)
+R_R1            R1(1=N00544 2=N02589 ) CN @P63-7-3.SCHEMATIC1(sch_1):INS2286@ANALOG_P.r.Normal(chips)
+V_V1            V1(+=N00544 -=0 ) CN @P63-7-3.SCHEMATIC1(sch_1):I00375@SOURCE.VDC.Normal(chips)
+C_C1            C1(1=N02589 2=0 ) CN @P63-7-3.SCHEMATIC1(sch_1):INS2116@ANALOG_P.c.Normal(chips)
+R_R6            R6(1=N024071 2=N02589 ) CN @P63-7-3.SCHEMATIC1(sch_1):INS2397@ANALOG_P.r.Normal(chips)
+.ENDALIASES

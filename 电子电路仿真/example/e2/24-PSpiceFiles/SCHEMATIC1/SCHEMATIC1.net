@@ -1,0 +1,15 @@
+* source 24
+V_V3         N07759 0  
++SIN 0 1 50 0 0 0
+R_R4         0 N060814  100k  
+V_V2         N07626 0 15Vdc
+X_U2         N07415 N05937 N07626 N060816 N07242 N08157 N060814 LM301A
+C_C1         N05937 N08157  150p  
+R_R2         N07759 N05937  10k  
+X_D2         N05937 N07242 awb1n914 PARAMS:                
+V_V4         N060816 0 -15
+X_D1         N07030 N05937 awb1n914 PARAMS:                
+X_D3         N07030 N07242 awbbzx85c3v3 PARAMS:               
+V_V1         N06910 0 -15
+R_R3         0 N07415  10k  
+R_R1         N06910 N07030  5.1k  

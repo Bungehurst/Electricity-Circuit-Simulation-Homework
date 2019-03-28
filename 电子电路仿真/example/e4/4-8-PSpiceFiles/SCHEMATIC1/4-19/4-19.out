@@ -1,0 +1,84 @@
+
+**** 08/05/13 14:23:35 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-4-19"  [ D:\example\e4\4-8-pspicefiles\schematic1\4-19.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "4-19.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 4-8
+R_R1         N00143 N00161  22  
+R_R2         0 N00143  1k  
+E_E1         N00161 0 N00143 0 9
+V_V1         N02544 0 10
+V_V2         N02544 N00143 0Vdc
+
+**** RESUMING 4-19.cir ****
+.END
+
+**** 08/05/13 14:23:35 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-4-19"  [ D:\example\e4\4-8-pspicefiles\schematic1\4-19.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00143)   10.0000 (N00161)   90.0000 (N02544)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         3.626E+00
+    V_V2        -3.626E+00
+
+    TOTAL POWER DISSIPATION  -3.63E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/05/13 14:23:35 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-4-19"  [ D:\example\e4\4-8-pspicefiles\schematic1\4-19.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

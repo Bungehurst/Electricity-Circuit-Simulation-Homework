@@ -1,0 +1,9 @@
+* source TEST8
+V_V13         N11552 0 15
+V_V14         IN 0  
++PWL 0 0 1 15 2 -15 3 15 
+R_R7         0 N10412  1k  
+V_V12         N11195 0 -15
+R_R9         IN N10758  1k  
+X_U1C         N10412 N10758 N11552 N11195 OUT LM324
+R_R8         N10412 OUT  10k  

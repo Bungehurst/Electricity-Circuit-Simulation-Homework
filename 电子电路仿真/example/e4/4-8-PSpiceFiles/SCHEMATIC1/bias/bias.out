@@ -1,0 +1,40 @@
+
+**** 05/04/10 21:29:27 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ F:\ORCAD\example\4-8-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.0\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 4-8
+R_R1         1 N00161  1k  
+R_R2         0 1  1k  
+E_E1         N00161 0 VALUE { V(1,2)*9 }
+V_V1         1 0 100Vdc
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR -- Node 2 is undefined
+ERROR -- Node 2 is floating

@@ -1,0 +1,41 @@
+
+**** 08/11/13 17:52:51 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-TEST14"  [ D:\temp\example\e9\test14-pspicefiles\schematic1\test14.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TEST14.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 1 100meg
+.STEP LIN PARAM c1 400u 1600u 300u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST14
+R_R1         0 N01931  1k  
+L_L1         N02086 N01931  1m  
+V_V1         N02143 0 DC 0Vdc AC 1Vac 
+C_C1         N02143 N02086  1n  
+
+**** RESUMING TEST14.cir ****
+.END
+
+ERROR -- Undefined parameter: c1

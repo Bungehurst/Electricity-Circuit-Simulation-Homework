@@ -1,0 +1,304 @@
+
+**** 12/11/13 11:42:28 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\e24\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test8-2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 0.01m 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST8
+X_U1C         N14641 N14910 VCCP VCCN OUT1 LM324
+R_R24         IN1 N20647  3.3k  
+R_R11         N141870 N142460  200k  
+V_V14         N14137 N14207  
++SIN 0 310 50 0 0 0
+R_R21         OUT3 N17702  10k  
+R_R12         N141190 N142880  200k  
+V_V17         N17702 0 3.3
+V_V15         VCCP 0 15
+R_R15         0 N14641  10k  
+R_R13         N142460 N14641  200k  
+X_U2C         N16264 N15825 VCCP VCCN OUT2 LM324
+R_R17         N16264 OUT2  470k  
+V_V16         VCCN 0 -15
+R_R9         N14137 N141190  200k  
+X_U3C         N20693 N20647 VCCP VCCN N20681 LM324
+R_R20         OUT2 N17372  10k  
+R_R14         N142880 N14910  200k  
+R_R19         OUT1 N15825  3.3k  
+R_R18         0 N16264  3.3k  
+V_V18         IN1 0  
++PWL 0 0 10m 15 20ms -15 30m 15 
+R_R16         N14910 OUT1  10k  
+R_R22         N20693 N20681  470k  
+R_R10         N14207 N141870  200k  
+Q_Q1         OUT3 N17372 0 BC847_1 
+R_R23         0 N20693  3.3k  
+
+**** RESUMING test8-2.cir ****
+.END
+
+**** 12/11/13 11:42:28 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\e24\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1C.dx        X_U1C.dy        X_U2C.dx        X_U2C.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U3C.dx        X_U3C.dy        
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 12/11/13 11:42:28 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\e24\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC847_1         X_U1C.qx        X_U2C.qx        X_U3C.qx        
+               NPN             PNP             PNP             PNP             
+       LEVEL    1               1               1               1            
+          IS   45.000000E-15  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  516.544         166.7           166.7           166.7          
+          NF    1.01            1               1               1            
+         VAF   74                                                            
+         IKF     .708                                                        
+         ISE   55.668000E-15                                                 
+          NE    2.567                                                        
+          BR    7.745           1               1               1            
+          NR    1.015           1               1               1            
+         VAR   14                                                            
+         IKR    1                                                            
+         ISC    1.084000E-12                                                 
+          NC    4.063                                                        
+         ISS    0               0               0               0            
+          RB    9                                                            
+         RBM    4.5                                                          
+         IRB  100.000000E-06                                                 
+          RE     .35            0               0               0            
+          RC    1.445           0               0               0            
+         CJE   13.050000E-12    0               0               0            
+         VJE     .69             .75             .75             .75         
+         MJE     .375                                                        
+         CJC    4.100000E-12    0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .42             .33             .33             .33         
+        XCJC     .65            1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          FC     .75                                                         
+          TF  620.000000E-12                                                 
+         XTF   68                                                            
+         VTF    1                                                            
+         ITF     .72                                                         
+         PTF    1                                                            
+          TR    2.500000E-09                                                 
+         XTB    1.4                                                          
+         XTI    3.2                                                          
+          KF   10.000000E-15    0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.2             2.2          
+           D     .87             .52             .52             .52         
+
+
+**** 12/11/13 11:42:28 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\e24\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1C.sw2       X_U1C.sw1       X_U1C.sw3       X_U1C.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U2C.sw2       X_U2C.sw1       X_U2C.sw3       X_U2C.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U3C.sw2       X_U3C.sw1       X_U3C.sw3       X_U3C.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+**** 12/11/13 11:42:28 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\e24\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  IN1)    0.0000  ( OUT1)-198.0E-06  ( OUT2)-536.1E-06  ( OUT3)    3.3000      
+
+( VCCN)  -15.0000  ( VCCP)   15.0000  (N14137) 349.4E-06 (N14207) 349.4E-06     
+
+(N14641) 445.7E-06 (N14910) 253.1E-06 (N15825)-49.70E-06 (N16264) 142.8E-06     
+
+(N17372)-536.1E-06 (N17702)    3.3000 (N20647) 148.3E-06 (N20681)     .0279     
+
+(N20693) 341.2E-06 (N141190) 317.3E-06                   (N141870) 381.5E-06    
+
+(N142460) 413.6E-06                   (N142880) 285.2E-06                       
+
+(X_U1C.6) 38.35E-09                   (X_U1C.7)-202.5E-06                       
+
+(X_U1C.8)-202.5E-06                   (X_U1C.9)    0.0000                       
+
+(X_U1C.a)   15.0000                   (X_U1C.b)-3.005E-06                       
+
+(X_U2C.6) 100.8E-09                   (X_U2C.7)-536.2E-06                       
+
+(X_U2C.8)-536.2E-06                   (X_U2C.9)    0.0000                       
+
+(X_U2C.a)   15.0000                   (X_U2C.b)-1.499E-06                       
+
+(X_U3C.6)-5.263E-06                   (X_U3C.7)     .0279                       
+
+(X_U3C.8)     .0279                   (X_U3C.9)    0.0000                       
+
+(X_U3C.a)   15.0000                   (X_U3C.b)-1.559E-06                       
+
+(X_U1C.10)     .6080                  (X_U1C.11)  -14.9600                      
+
+(X_U1C.12)  -14.9600                  (X_U1C.13)     .5941                      
+
+(X_U1C.14)     .5942                  (X_U1C.53)   13.5000                      
+
+(X_U1C.54)  -14.1780                  (X_U1C.90)-90.06E-06                      
+
+(X_U1C.91)   40.0000                  (X_U1C.92)  -40.0000                      
+
+(X_U1C.99)    0.0000                  (X_U2C.10)     .6077                      
+
+(X_U2C.11)  -14.9600                  (X_U2C.12)  -14.9600                      
+
+(X_U2C.13)     .5938                  (X_U2C.14)     .5939                      
+
+(X_U2C.53)   13.5000                  (X_U2C.54)  -14.1780                      
+
+(X_U2C.90)-1.445E-06                  (X_U2C.91)   40.0000                      
+
+(X_U2C.92)  -40.0000                  (X_U2C.99)    0.0000                      
+
+(X_U3C.10)     .6079                  (X_U3C.11)  -14.9600                      
+
+(X_U3C.12)  -14.9600                  (X_U3C.13)     .5940                      
+
+(X_U3C.14)     .5941                  (X_U3C.53)   13.5000                      
+
+(X_U3C.54)  -14.1780                  (X_U3C.90) 58.67E-06                      
+
+(X_U3C.91)   40.0000                  (X_U3C.92)  -40.0000                      
+
+(X_U3C.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V14       -1.605E-10
+    V_V17       -5.009E-12
+    V_V15       -9.960E-03
+    V_V16        9.960E-03
+    V_V18        4.495E-08
+    X_U1C.vb     3.835E-13
+    X_U1C.vc     1.350E-11
+    X_U1C.ve     1.455E-11
+    X_U1C.vlim  -9.006E-08
+    X_U1C.vlp   -4.000E-11
+    X_U1C.vln   -4.000E-11
+    X_U2C.vb     1.008E-12
+    X_U2C.vc     1.350E-11
+    X_U2C.ve     1.455E-11
+    X_U2C.vlim  -1.445E-09
+    X_U2C.vlp   -4.000E-11
+    X_U2C.vln   -4.000E-11
+    X_U3C.vb    -5.263E-11
+    X_U3C.vc     1.347E-11
+    X_U3C.ve     1.458E-11
+    X_U3C.vlim   5.867E-08
+    X_U3C.vlp   -4.000E-11
+    X_U3C.vln   -4.000E-11
+
+    TOTAL POWER DISSIPATION   2.99E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/11/13 11:42:28 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\e24\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.17
+

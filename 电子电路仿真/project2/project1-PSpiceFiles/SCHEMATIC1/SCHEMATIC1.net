@@ -1,0 +1,16 @@
+* source PROJECT1
+R_R1         N14384 N143130  100 TC=0,0 
+L_L1         N143130 0  1mH IC=0 
+C_C1         N14384 0  1u IC=10  
+C_C2         N14741 0  1u IC=10  
+L_L2         N147170 0  1mH IC=0 
+R_R2         N14741 N147170  10k TC=0,0 
+C_C3         N14883 0  1u IC=10  
+R_R3         N14883 N148590  1 TC=0,0 
+L_L3         N148590 0  1mH IC=0 
+L_L4         N150040 0  1mH IC=0 
+R_R4         N15028 N150040  10 TC=0,0 
+C_C4         N15028 0  1u IC=10  
+C_C5         N15226 0  1u IC=10  
+L_L5         N152020 0  1mH IC=0 
+R_R5         N15226 N152020  1k TC=0,0 

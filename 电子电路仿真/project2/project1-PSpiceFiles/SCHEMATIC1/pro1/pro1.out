@@ -1,0 +1,69 @@
+
+**** 03/26/19 16:15:27 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pro1"  [ C:\Users\lun55\Desktop\电子电路仿真\project2\project1-pspicefiles\schematic1\pro1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pro1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 1u SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT1
+R_R1         N14384 N143130  100 TC=0,0 
+L_L1         N143130 0  1mH IC=0 
+C_C1         N14384 0  1u IC=10  
+C_C2         N14741 0  1u IC=10  
+L_L2         N147170 0  1mH IC=0 
+R_R2         N14741 N147170  10k TC=0,0 
+C_C3         N14883 0  1u IC=10  
+R_R3         N14883 N148590  1 TC=0,0 
+L_L3         N148590 0  1mH IC=0 
+L_L4         N150040 0  1mH IC=0 
+R_R4         N15028 N150040  10 TC=0,0 
+C_C4         N15028 0  1u IC=10  
+C_C5         N15226 0  1u IC=10  
+L_L5         N152020 0  1mH IC=0 
+R_R5         N15226 N152020  1k TC=0,0 
+
+**** RESUMING pro1.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+**** 03/26/19 16:15:27 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pro1"  [ C:\Users\lun55\Desktop\电子电路仿真\project2\project1-pspicefiles\schematic1\pro1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .52
+

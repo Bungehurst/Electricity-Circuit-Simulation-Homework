@@ -1,0 +1,4 @@
+* source 1-5
+V_V1         N00122 0 0Vdc
+X_D1         VDIODE 0 awbbzx55c3v6 PARAMS:               
+R_R1         VDIODE N00122  10k  

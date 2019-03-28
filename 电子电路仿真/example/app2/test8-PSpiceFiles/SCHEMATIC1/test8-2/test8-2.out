@@ -1,0 +1,350 @@
+
+**** 03/25/14 15:33:02 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\app2\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test8-2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10 0 1m SKIPBP 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST8
+V_V17         N45631 0  
++SIN 0 12 7.5 0 0 0
+C_C8         0 N51471  100u  
+X_U1         N14718 N15001 VCCP VCCN N14780 uA741
+V_V15         VCCP 0 15
+X_U5         N32753 N32831 VCCP VCCN N32847 uA741
+Q_Q1         VCCP N36569 N37948 BC337_1 
+R_R6         0 N16958  180k  
+X_U4         N30951 N30913 VCCP VCCN N30965 uA741
+R_R4         N15001 N14780  10.1k  
+X_D9         N51353 N51471 awb1n4002 PARAMS:                
+X_D1         N299201 N27921 awbbzx55c13 PARAMS:               
+R_R22         N32809 N332970  2.2k  
+X_D2         N299201 0 awbbzx55c13 PARAMS:               
+D_D5         N332970 N32977 D1N4148_1 
+R_R17         0 N32831  6.8k  
+R_R12         N27921 N30913  180k  
+C_C7         N32977 N33029  0.1u  
+C_C9         N55978 0  100u  
+R_R21         N32977 N33029  1meg  
+D_D7         N45631 N38962 D1N4148 
+X_D11         0 N51353 awb1n4002 PARAMS:                
+V_V16         VCCN 0 -15
+R_R18         N32847 N32809  4.7k  
+R_R7         N30965 N27837  10k  
+R_R13         0 N30951  180k  
+C_C3         N16780 N17102  0.1u  
+X_D3         N328751 N32809 awbbzx55c13 PARAMS:               
+R_R27         0 N37948  47  
+R_R23         N36569 VCCP  5k  
+R_R1         N145651 N14780  150k  
+C_C5         0 N14718  0.01u  
+R_R9         N27837 N27921  20k  
+R_R26         VCCN N38962  5k  
+X_U2         N16958 N16780 VCCP VCCN N17102 uA741
+R_R28         0 N52991  10k  
+X_D4         N328751 0 awbbzx55c13 PARAMS:               
+R_R29         0 N56016  10k  
+V_V18         N51046 N51353  
++SIN 0 20 50 0 0 0
+X_D8         N51046 N51471 awb1n4002 PARAMS:                
+C_C4         N14718 N145651  0.01u  
+Q_Q2         VCCN N38962 N37948 BC327_1 
+C_C6         N30913 N30965  0.1u  
+R_R11         N29567 N27921  4.7k  
+X_U6         N33015 N32977 VCCP VCCN N33029 uA741
+X_U3         N27837 N28907 VCCP VCCN N29567 uA741
+R_R14         N30913 N30965  1meg  
+V_V19         N56028 N56036  
++SIN 0 20 50 0 0 0
+X_D10         0 N51046 awb1n4002 PARAMS:                
+D_D6         N36569 N45631 D1N4148 
+R_R15         N33029 N32753  10k  
+R_R5         N14780 N16780  180k  
+R_R19         N32809 N32977  180k  
+X_U8         N55978 N56016 0 LM7915C
+X_D12         N55978 N56028 awb1n4002 PARAMS:                
+R_R2         0 N14718  150k  
+R_R16         N32753 N32809  20k  
+X_D13         N55978 N56036 awb1n4002 PARAMS:                
+R_R8         N16780 N17102  1meg  
+X_D14         N56028 0 awb1n4002 PARAMS:                
+R_R20         0 N33015  180k  
+R_R3         0 N15001  5k  
+X_U7         N51471 N52991 0 LM7815C
+R_R10         0 N28907  6.8k  
+X_D15         N56036 0 awb1n4002 PARAMS:                
+
+**** RESUMING test8-2.cir ****
+.END
+
+**** 03/25/14 15:33:02 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\app2\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148_1       D1N4148         X_U1.dx         X_U1.dy         
+          IS    2.682000E-09    2.682000E-09  800.000000E-18  800.000000E-18 
+           N    1.836           1.836                                        
+         ISR    1.565000E-09    1.565000E-09                                 
+         IKF     .04417          .04417                                      
+          BV  100             100                                            
+         IBV  100.000000E-06  100.000000E-06                                 
+          RS     .5664           .5664          1               1.000000E-03 
+          TT   11.540000E-09   11.540000E-09                                 
+         CJO    4.000000E-12    4.000000E-12                   10.000000E-12 
+          VJ     .5              .5                                          
+           M     .3333           .3333                                       
+
+
+               X_U5.dx         X_U5.dy         X_U4.dx         X_U4.dy         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_D9.model22    X_D11.model22   X_U2.dx         X_U2.dy         
+          IS  148.800000E-09  148.800000E-09  800.000000E-18  800.000000E-18 
+           N    2.21            2.21                                         
+          BV  200             200                                            
+         IBV    1               1                                            
+          RS     .03             .03            1               1.000000E-03 
+          TT    1.440000E-06    1.440000E-06                                 
+         CJO   23.130000E-12   23.130000E-12                   10.000000E-12 
+          VJ     .5              .5                                          
+           M     .421            .421                                        
+
+
+               X_D8.model22    X_U6.dx         X_U6.dy         X_U3.dx         
+          IS  148.800000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    2.21                                                         
+          BV  200                                                            
+         IBV    1                                                            
+          RS     .03            1               1.000000E-03    1            
+          TT    1.440000E-06                                                 
+         CJO   23.130000E-12                   10.000000E-12                 
+          VJ     .5                                                          
+           M     .421                                                        
+
+
+               X_U3.dy         X_D10.model22   X_D12.model22   X_D13.model22   
+          IS  800.000000E-18  148.800000E-09  148.800000E-09  148.800000E-09 
+           N                    2.21            2.21            2.21         
+          BV                  200             200             200            
+         IBV                    1               1               1            
+          RS    1.000000E-03     .03             .03             .03         
+          TT                    1.440000E-06    1.440000E-06    1.440000E-06 
+         CJO   10.000000E-12   23.130000E-12   23.130000E-12   23.130000E-12 
+          VJ                     .5              .5              .5          
+           M                     .421            .421            .421        
+
+
+               X_D14.model22   X_D15.model22   X_U8.x1.Dlim    X_U8.x1.Dz      
+          IS  148.800000E-09  148.800000E-09   10.000000E-15   50.000000E-15 
+           N    2.21            2.21                                         
+          BV  200             200                               7.11         
+         IBV    1               1                              50.000000E-09 
+          RS     .03             .03                            3            
+          TT    1.440000E-06    1.440000E-06                                 
+         CJO   23.130000E-12   23.130000E-12                                 
+          VJ     .5              .5              .7                          
+           M     .421            .421                                        
+
+
+               X_U7.x1.Dlim    X_U7.x1.Dz      
+          IS   10.000000E-15   50.000000E-15 
+          BV                    7.11         
+         IBV                   50.000000E-09 
+          RS                    3            
+          VJ     .7                          
+
+
+**** 03/25/14 15:33:02 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\app2\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC337_1         BC327_1         X_U1.qx         X_U5.qx         
+               NPN             PNP             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  180.000000E-15  230.000000E-15  800.000000E-18  800.000000E-18 
+          BF  449.302         504.327          93.75           93.75         
+          NF    1               1               1               1            
+         VAF   95              26                                            
+         IKF     .82             .78                                         
+         ISE    8.480000E-15   39.284000E-15                                 
+          NE    1.566           1.944                                        
+          BR   16.919          23               1               1            
+          NR    1.005           1.002           1               1            
+         VAR   13               4.5                                          
+         IKR     .663            .195                                        
+         ISC  102.000000E-15  118.000000E-18                                 
+          NC    1.764           3.025                                        
+         ISS    0               0               0               0            
+          RB     .75             .8                                          
+         RBM     .375            .4                                          
+         IRB  100.000000E-06  100.000000E-06                                 
+          RE     .17             .203           0               0            
+          RC     .289            .262           0               0            
+         CJE   63.400000E-12   57.177000E-12    0               0            
+         VJE     .85            1                .75             .75         
+         MJE     .372            .47                                         
+         CJC   16.600000E-12   28.600000E-12    0               0            
+         VJC     .78            1                .75             .75         
+         MJC     .433            .52             .33             .33         
+        XCJC     .65             .65            1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          FC     .75             .75                                         
+          TF  810.000000E-12  664.000000E-12                                 
+         XTF    4.3             6.35                                         
+         VTF    1.5             2                                            
+         ITF     .45             .25                                         
+         PTF    1               1                                            
+          TR    2.600000E-09    2.600000E-09                                 
+         XTB    1.5             1.7                                          
+         XTI    4.8             4.8                                          
+          KF    5.000000E-15    5.000000E-15    0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.42         
+           D     .87             .52             .87             .87         
+
+
+               X_U4.qx         X_U2.qx         X_U6.qx         X_U3.qx         
+               NPN             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75           93.75           93.75         
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.42            2.42         
+           D     .87             .87             .87             .87         
+
+
+               X_U8.x1.Npn1    X_U8.x1.Pnp1    X_U7.x1.Npn1    
+               NPN             PNP             NPN             
+       LEVEL    1               1               1            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15 
+          BF   50             250              50            
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.2             2.42         
+           D     .87             .52             .87         
+
+
+**** 03/25/14 15:33:02 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\app2\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U8.x1.Rbg1    
+           R    1            
+         TC1 -950.000000E-09 
+         TC2 -653.000000E-09 
+
+
+**** 03/25/14 15:33:02 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\app2\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U8.x1.Sbg1    X_U7.x1.Sbg1    
+         RON    1               1            
+        ROFF    1.000000E+06    1.000000E+06 
+         VON    3.7             3.7          
+        VOFF    3               3            
+
+
+          JOB ABORTED
+
+**** 03/25/14 15:33:02 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-test8-2"  [ C:\example\app2\test8-pspicefiles\schematic1\test8-2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       75.66
+

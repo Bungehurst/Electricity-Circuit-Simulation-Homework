@@ -1,0 +1,56 @@
+
+**** 11/25/13 11:13:55 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e21\p108-2-4-1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms 0 0.01m 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P108-2-4-1
+V_V10         N17611 0 15
+R_R20         N17549 N17667  10k  
+V_V4         N13319 N130851 1Vdc
+R_R21         0 N17667  4k  
+R_R17         N13384 N14719  10k  
+X_U2         0 N17549 N17611 N174833 N17667 uA741
+V_V11         N175111 0  
++SIN 0 10m 50 0 <DF> 0
+-----------------$
+ERROR -- Expecting keyword STIMULUS, saw DF.
+
+V_V7         N130851 0  
++SIN 0 10m 50 0 0 0
+V_V5         N129902 0 15Vdc
+V_V8         N17543 N175111 1Vdc
+R_R19         N17543 N17549  1k  
+R_R18         0 N14719  4k  
+X_U1         N13384 0 N129902 N14097 N14719 uA741
+V_V6         N14097 0 -15
+R_R16         N13319 N13384  1k  
+V_V9         N174833 0 -15Vdc
+
+**** RESUMING bias.cir ****
+.END
+

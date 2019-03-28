@@ -1,0 +1,41 @@
+
+**** 06/02/10 15:02:58 ******* PSpice 10.0.0 (Jan 2003) ******* ID# 1111111111 
+ ** Profile: "SCHEMATIC1-bias"  [ D:\My  pspice\999\1-3-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of g:\OrCAD\OrCAD_10.0\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN Vbb 0 2.7 0.01 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 1-3
+Q_Q1         VOUT N00119 0 Q2N2222
+V_Vcc         VOUT 0 10
+R_R1         N00112 N00119  100k  
+
+**** RESUMING bias.cir ****
+.END
+
+
+ERROR -- DC device Vbb is undefined
+ERROR -- Less than 2 connections at node N00112

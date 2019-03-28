@@ -1,0 +1,6 @@
+* source P238-10-11
+R_R1         N00159 0  1000  
+C_C1         N00159 0  100u IC=0  
+X_U1         0 N00159 Sw_tOpen PARAMS: tOpen=0 ttran=1u Rclosed=0.01 Ropen=1Meg
+I_I1         0 N00159 DC 0Adc AC 0Aac
++SIN 0 5 50 0 0 0

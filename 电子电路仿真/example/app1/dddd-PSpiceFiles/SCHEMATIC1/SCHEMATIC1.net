@@ -1,0 +1,23 @@
+* source DDDD
+X_U2B         N03154 N03202 OUT2 VCCP VCCN awbne5532_3 PARAMS:                 
++                  
+R_R9         0 N03202  20k  
+R_R1         N00848 N00553  10k  
+R_R5         N01050 OUT1  100k  
+R_R2         N00553 N00735  100k  
+C_C1         0 N03108  10n  
+X_U1A         N00660 N00553 N00735 VCCP VCCN awbne5532_3 PARAMS:               
++                    
+R_R7         OUT1 N03108  10k  
+X_U1B         N01386 N01050 OUT1 VCCP VCCN awbne5532_3 PARAMS:                 
++                  
+V_V3         N00848 0 DC 0Vdc AC 10mVac 
+R_R10         N03202 OUT2  20k  
+R_R6         0 N01386  10k  
+V_V1         VCCP 0 15
+R_R3         0 N00660  10k  
+R_R8         N03108 N03154  10k  
+R_R11         0 N03154  20k  
+V_V2         VCCN 0 -15
+C_C2         0 N03154  10n  
+R_R4         N00735 N01050  10k  

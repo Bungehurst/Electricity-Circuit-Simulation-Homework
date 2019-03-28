@@ -1,0 +1,127 @@
+
+**** 11/02/13 21:41:10 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e10\1-2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 -200 1000 5 
+.TEMP 0  125
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 1-2
+X_D2         VDIODE 0 awb1n4148 PARAMS:                
+R_R1         N00099 VDIODE  1000  
+V_V1         N00099 0 0Vdc
+
+**** RESUMING bias.cir ****
+.END
+
+**** 11/02/13 21:41:10 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e10\1-2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D2.model22    
+          IS    1.000000E-09 
+           N    1.55         
+          BV  120            
+         IBV    1            
+          RS     .5          
+          TT    5.000000E-09 
+         CJO    1.850000E-12 
+          VJ     .65         
+           M     .18         
+
+
+**** 11/02/13 21:41:10 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e10\1-2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =    0.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                X_D2.model22  
+
+         IS        5.397E-11  
+         VJ        7.055E-01  
+        CJO        1.818E-12  
+         RS        5.000E-01  
+        IKF        0.000E+00  
+         BV        1.200E+02  
+
+
+**** 11/02/13 21:41:10 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e10\1-2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =  125.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                X_D2.model22  
+
+         IS        1.575E-06  
+         VJ        4.401E-01  
+        CJO        1.971E-12  
+         RS        5.000E-01  
+        IKF        0.000E+00  
+         BV        1.200E+02  
+
+
+
+          JOB CONCLUDED
+
+**** 11/02/13 21:41:10 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 2090008609 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\example\e10\1-2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

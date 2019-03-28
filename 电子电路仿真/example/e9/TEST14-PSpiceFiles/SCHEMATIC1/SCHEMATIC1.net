@@ -1,0 +1,6 @@
+* source TEST14
+R_R1         0 OUT  {Rsweep}  
+L_L1         IN N05727  10m  
+V_V1         IN 0 DC 0Vdc AC 1Vac 
+C_C1         N05727 OUT  100n  
+.PARAM  Rsweep=1k
