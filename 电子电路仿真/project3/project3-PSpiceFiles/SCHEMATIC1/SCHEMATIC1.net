@@ -1,0 +1,6 @@
+* source PROJECT3
+V_V1         N01730 0 DC 0Vdc AC 1Vac 
+R_R1         N01730 N00471  999k  
+R_R2         N004201 N00471  1k  
+C_C1         N004201 0  {Cval} IC=10 
+.PARAM  Cval=1n

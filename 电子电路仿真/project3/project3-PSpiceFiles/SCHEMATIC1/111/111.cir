@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-111"  [ C:\Users\DPL\Desktop\project3\project3-PSpiceFiles\SCHEMATIC1\111.sim ] 
+
+** Creating circuit file "111.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1k 1 100000k
+.STEP DEC PARAM Cval 1n 10u 1 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
