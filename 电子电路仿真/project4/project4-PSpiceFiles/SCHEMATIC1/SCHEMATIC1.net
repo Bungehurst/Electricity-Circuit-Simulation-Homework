@@ -1,0 +1,10 @@
+* source PROJECT4
+R_R3         0 N000400  3k  
+V_Vdd         N01999 0 0Vdc
+M_M1         N04503 N01999 N000400 N000400 M2N6660
+R_R2         N01301 N04503  4.7k  
+R_R6         N04239 N01999  1M  
+V_Ud         N01301 0 0Vdc
+R_R7         0 N04503  10K  
+R_R4         N04239 N01301  100k  
+R_R5         0 N04239  20k  

@@ -1,0 +1,45 @@
+
+**** 04/16/19 20:10:14 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dc"  [ C:\Users\DPL\Desktop\project4\project4-PSpiceFiles\SCHEMATIC1\dc.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vgs 0 10 0.01 
++ LIN V_V1 0 10 0.O1 
+----------------$
+ERROR -- Invalid increment
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT4
+V_Vgs         N01501 N01301 0Vdc
+M_M1         N000402 N01501 N02434 N02434 M2N6660
+R_R1         0 N01501  1k  
+R_R2         N01301 N000402  1k  
+V_V1         N01301 0 0Vdc
+R_R3         0 N02434  50  
+
+**** RESUMING dc.cir ****
+.END
+

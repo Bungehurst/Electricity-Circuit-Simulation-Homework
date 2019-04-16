@@ -1,0 +1,116 @@
+
+**** 04/16/19 20:55:23 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dc"  [ C:\Users\DPL\Desktop\project4\project4-PSpiceFiles\SCHEMATIC1\dc.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Ud 0 60 0.01 
++ LIN V_Vdd 0 5 1 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT4
+R_R3         0 N000400  3k  
+V_Vdd         N01999 0 0Vdc
+M_M1         N04503 N01999 N000400 N000400 M2N6660
+R_R2         N01301 N04503  4.7k  
+R_R6         N04239 N01999  1M  
+V_Ud         N01301 0 0Vdc
+R_R7         0 N04503  10K  
+R_R4         N04239 N01301  100k  
+R_R5         0 N04239  20k  
+
+**** RESUMING dc.cir ****
+.END
+
+**** 04/16/19 20:55:23 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dc"  [ C:\Users\DPL\Desktop\project4\project4-PSpiceFiles\SCHEMATIC1\dc.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               M2N6660         
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .32         
+         VTO    1.8          
+          KP    1.047000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .4672       
+          RS     .02         
+          RG  209.5          
+          RB    1.000000E-03 
+         RDS    6.000000E+06 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD  118.000000E-12 
+          CJ    0            
+        CJSW    0            
+        CGSO    1.885000E-12 
+        CGDO    7.564000E-12 
+        CGBO    0            
+         TOX    2.000000E-06 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+**** 04/16/19 20:55:23 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dc"  [ C:\Users\DPL\Desktop\project4\project4-PSpiceFiles\SCHEMATIC1\dc.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.09
+
