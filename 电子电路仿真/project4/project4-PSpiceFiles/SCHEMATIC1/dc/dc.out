@@ -1,7 +1,7 @@
-
-**** 04/16/19 20:55:23 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-dc"  [ C:\Users\DPL\Desktop\project4\project4-PSpiceFiles\SCHEMATIC1\dc.sim ] 
+**** 04/16/19 22:13:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dc"  [ C:\Users\lun55\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4-pspicefiles\sche
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,35 +18,31 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
 .DC LIN V_Ud 0 60 0.01 
-+ LIN V_Vdd 0 5 1 
-.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
++ LIN V_Vdd 0 100 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
 
 
 
 **** INCLUDING SCHEMATIC1.net ****
 * source PROJECT4
-R_R3         0 N000400  3k  
+M_M1         1 N01999 0 0 M2N6660
+R_R2         N01301 1  4.7k  
 V_Vdd         N01999 0 0Vdc
-M_M1         N04503 N01999 N000400 N000400 M2N6660
-R_R2         N01301 N04503  4.7k  
-R_R6         N04239 N01999  1M  
 V_Ud         N01301 0 0Vdc
-R_R7         0 N04503  10K  
-R_R4         N04239 N01301  100k  
-R_R5         0 N04239  20k  
 
 **** RESUMING dc.cir ****
 .END
 
-**** 04/16/19 20:55:23 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+**** 04/16/19 22:13:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-dc"  [ C:\Users\DPL\Desktop\project4\project4-PSpiceFiles\SCHEMATIC1\dc.sim ] 
+ ** Profile: "SCHEMATIC1-dc"  [ C:\Users\lun55\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4-pspicefiles\sche
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -93,16 +89,16 @@ R_R5         0 N04239  20k
         WETA    0            
           U0    0            
         TEMP    0            
-         VDD    0            
+         VDD    5            
        XPART    0            
 
 
 
           JOB CONCLUDED
 
-**** 04/16/19 20:55:23 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+**** 04/16/19 22:13:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-dc"  [ C:\Users\DPL\Desktop\project4\project4-PSpiceFiles\SCHEMATIC1\dc.sim ] 
+ ** Profile: "SCHEMATIC1-dc"  [ C:\Users\lun55\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4-pspicefiles\sche
 
 
  ****     JOB STATISTICS SUMMARY
@@ -112,5 +108,5 @@ R_R5         0 N04239  20k
 
 
 
-  Total job time (using Solver 1)   =        1.09
+  Total job time (using Solver 1)   =        6.38
 
