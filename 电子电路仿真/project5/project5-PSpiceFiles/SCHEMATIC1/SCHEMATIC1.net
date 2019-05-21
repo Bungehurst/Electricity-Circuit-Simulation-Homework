@@ -1,0 +1,14 @@
+* source PROJECT5
+V_V2         0 N00351 15
+X_Q1         N00317 N00250 OUT awbbc337 PARAMS:                                
++             
+V_V3         IN 0  
++SIN 0 10m 1k 0 0 0
+V_V1         N00317 0 15
+X_Q2         N00351 N00256 OUT awbbc327 PARAMS:                                
++            
+R_R1         N00250 N00317  10K  
+R_R2         N00351 N00256  10K  
+R_R3         N00351 OUT  10K  
+D_D2         N00250 IN D1N4148_1 
+D_D3         IN N00256 D1N4148_1 

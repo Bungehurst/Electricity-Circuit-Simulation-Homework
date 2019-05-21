@@ -1,0 +1,188 @@
+
+**** 05/21/19 16:32:22 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project6\project6-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 1 100meg
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT6
+R_R4         N00603 N00637  100k  
+R_R5         0 N00742  10k  
+R_R6         OUT1 N00918  10k  
+V_V1         N00590 0 DC 0Vdc AC 10mVac 
+R_R7         N00658 OUT1  100k  
+X_U2B         N01203 N01564 OUT2 VCCP VCCN awbne5532_3 PARAMS:                 
++                  
+R_R8         N00918 N01203  10k  
+X_U1A         N00844 N00603 N00637 VCCP VCCN awbne5532_3 PARAMS:               
++                    
+R_R9         0 N01203  20k  
+R_R10         N01564 0  20k  
+R_R11         OUT2 N01564  20k  
+X_U1B         N00742 N00658 OUT1 VCCP VCCN awbne5532_3 PARAMS:                 
++                  
+C_C1         0 N01203  10n  
+C_C2         0 N00918  10n  
+R_R1         0 N00844  10k  
+V_V2         VCCP 0 15
+R_R2         N00590 N00603  10k  
+V_V3         VCCN 0 -15
+R_R3         N00637 N00658  10k  
+
+**** RESUMING bias.cir ****
+.END
+
+**** 05/21/19 16:32:22 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project6\project6-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( OUT1)     .0056  ( OUT2)     .0056  ( VCCN)  -15.0000  ( VCCP)   15.0000      
+
+(N00590)    0.0000 (N00603)-420.8E-06 (N00637)-625.8E-06 (N00658)-420.8E-06     
+
+(N00742)-420.8E-06 (N00844)-420.8E-06 (N00918)     .0040 (N01203)     .0024     
+
+(N01564)     .0024 (X_U1A.xinstne5532_3.1)-1.393E-06                            
+
+(X_U1A.xinstne5532_3.2) -100.0000     (X_U1A.xinstne5532_3.3)  100.0000         
+
+(X_U1A.xinstne5532_3.4)  -30.0000     (X_U1A.xinstne5532_3.5)   30.0000         
+
+(X_U1A.xinstne5532_3.6) 1000.0000     (X_U1A.xinstne5532_3.7)-1.393E-06         
+
+(X_U1A.xinstne5532_3.8)  -14.7880     (X_U1B.xinstne5532_3.1)-1.437E-06         
+
+(X_U1B.xinstne5532_3.2) -100.0000     (X_U1B.xinstne5532_3.3)  100.0000         
+
+(X_U1B.xinstne5532_3.4)  -30.0000     (X_U1B.xinstne5532_3.5)   30.0000         
+
+(X_U1B.xinstne5532_3.6) 1000.0000     (X_U1B.xinstne5532_3.7)-1.437E-06         
+
+(X_U1B.xinstne5532_3.8)  -15.2570     (X_U2B.xinstne5532_3.1)-1.436E-06         
+
+(X_U2B.xinstne5532_3.2) -100.0000     (X_U2B.xinstne5532_3.3)  100.0000         
+
+(X_U2B.xinstne5532_3.4)  -30.0000     (X_U2B.xinstne5532_3.5)   30.0000         
+
+(X_U2B.xinstne5532_3.6) 1000.0000     (X_U2B.xinstne5532_3.7)-1.436E-06         
+
+(X_U2B.xinstne5532_3.8)  -15.2480     (X_U1A.xinstne5532_3.11)  -15.0000        
+
+(X_U1A.xinstne5532_3.12)-633.5E-06    (X_U1A.xinstne5532_3.13)-275.7E-09        
+
+(X_U1A.xinstne5532_3.14)-5.560E-06    (X_U1A.xinstne5532_3.15)  -15.0000        
+
+(X_U1A.xinstne5532_3.16)  -15.0000    (X_U1A.xinstne5532_3.17)    -.5848        
+
+(X_U1A.xinstne5532_3.18)     .5835    (X_U1A.xinstne5532_3.21)  -13.1780        
+
+(X_U1A.xinstne5532_3.22)   13.1780    (X_U1A.xinstne5532_3.23)-633.5E-06        
+
+(X_U1A.xinstne5532_3.24) 1000.9000    (X_U1A.xinstne5532_3.26)-420.8E-06        
+
+(X_U1B.xinstne5532_3.11)  -15.0000    (X_U1B.xinstne5532_3.12)     .0057        
+
+(X_U1B.xinstne5532_3.13)-11.53E-06    (X_U1B.xinstne5532_3.14) 36.20E-06        
+
+(X_U1B.xinstne5532_3.15)  -15.0000    (X_U1B.xinstne5532_3.16)  -15.0000        
+
+(X_U1B.xinstne5532_3.17)    -.5784    (X_U1B.xinstne5532_3.18)     .5898        
+
+(X_U1B.xinstne5532_3.21)  -13.1780    (X_U1B.xinstne5532_3.22)   13.1780        
+
+(X_U1B.xinstne5532_3.23)     .0057    (X_U1B.xinstne5532_3.24) 1000.9000        
+
+(X_U1B.xinstne5532_3.26)-420.8E-06    (X_U2B.xinstne5532_3.11)  -15.0000        
+
+(X_U2B.xinstne5532_3.12)     .0056    (X_U2B.xinstne5532_3.13)-11.42E-06        
+
+(X_U2B.xinstne5532_3.14) 35.79E-06    (X_U2B.xinstne5532_3.15)  -15.0000        
+
+(X_U2B.xinstne5532_3.16)  -15.0000    (X_U2B.xinstne5532_3.17)    -.5785        
+
+(X_U2B.xinstne5532_3.18)     .5898    (X_U2B.xinstne5532_3.21)  -13.1780        
+
+(X_U2B.xinstne5532_3.22)   13.1780    (X_U2B.xinstne5532_3.23)     .0056        
+
+(X_U2B.xinstne5532_3.24) 1000.9000    (X_U2B.xinstne5532_3.26)     .0024    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.208E-08
+    V_V2        -2.402E-02
+    V_V3         2.402E-02
+    X_U2B.xinstne5532_3.VCP  -1.000E-10
+    X_U2B.xinstne5532_3.VCM   1.000E-10
+    X_U2B.xinstne5532_3.VFI2M  -1.596E-10
+    X_U2B.xinstne5532_3.VFI2P  -1.441E-10
+    X_U2B.xinstne5532_3.VREF   2.553E+00
+    X_U1A.xinstne5532_3.VCP  -1.000E-10
+    X_U1A.xinstne5532_3.VCM   1.000E-10
+    X_U1A.xinstne5532_3.VFI2M   2.253E-11
+    X_U1A.xinstne5532_3.VFI2P   2.224E-13
+    X_U1A.xinstne5532_3.VREF   2.553E+00
+    X_U1B.xinstne5532_3.VCP  -1.000E-10
+    X_U1B.xinstne5532_3.VCM   1.000E-10
+    X_U1B.xinstne5532_3.VFI2M  -2.221E-10
+    X_U1B.xinstne5532_3.VFI2P  -2.066E-10
+    X_U1B.xinstne5532_3.VREF   2.553E+00
+
+    TOTAL POWER DISSIPATION  -7.66E+03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/21/19 16:32:22 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project6\project6-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .89
+

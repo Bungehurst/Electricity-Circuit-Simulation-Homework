@@ -1,0 +1,219 @@
+
+**** 05/07/19 07:38:47 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project5\project5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2000u 0 1u 
+.FOUR 10k 9 v([OUT]) 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT5
+V_V2         0 N00351 15
+X_Q1         N00317 N00250 OUT awbbc337 PARAMS:                                
++             
+V_V3         IN 0  
++SIN 0 10m 1k 0 0 0
+V_V1         N00317 0 15
+X_Q2         N00351 N00256 OUT awbbc327 PARAMS:                                
++            
+R_R1         N00250 N00317  10K  
+R_R2         N00351 N00256  10K  
+R_R3         N00351 OUT  10K  
+D_D2         N00250 IN D1N4148_1 
+D_D3         IN N00256 D1N4148_1 
+
+**** RESUMING bias.cir ****
+.END
+
+**** 05/07/19 07:38:47 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project5\project5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148_1       
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 05/07/19 07:38:47 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project5\project5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     X_Q2.model7     
+               NPN             PNP             
+       LEVEL    1               1            
+          IS    7.196000E-15   78.476000E-15 
+          BF  180.8           475            
+          NF     .9798          1.0638       
+         VAF  113.3035        100            
+         IKF     .7659           .35         
+         ISE   14.980000E-12  200.000000E-15 
+          NE    1.927           1.7          
+          BR    1.952          11.39092      
+          NR     .9798          1.0638       
+         VAR   30.25094                      
+         IKR    1.537460E-03                 
+         ISC   11.537500E-15   65.000000E-12 
+          NC    1.050935                     
+         ISS    0               0            
+          RB     .3918          1.02         
+         RBM     .3918                       
+         IRB    1.000000E+06                 
+          RE     .1183           .088619     
+          RC     .1383           .382519     
+         CJE   33.530000E-12   42.021060E-12 
+         VJE     .653331         .9          
+         MJE     .3282           .467835     
+         CJC   11.650000E-12   21.549100E-12 
+         VJC     .5366           .47338      
+         MJC     .3367           .38926      
+        XCJC    1                .5          
+         CJS    0               0            
+         VJS     .75             .75         
+         MJS     .33                         
+          FC     .1991                       
+          TF  350.000000E-12  382.696000E-12 
+         XTF    5               5            
+         VTF   10               5            
+         ITF     .1              .75         
+         PTF   37.34235                      
+          TR   54.564700E-09   10.000000E-09 
+         XTB    1.5             1.5          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 05/07/19 07:38:47 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project5\project5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    -.0386  (N00250)     .6217 (N00256)    -.6222     
+
+(N00317)   15.0000 (N00351)  -15.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -3.080E-03
+    V_V3        -1.617E-05
+    V_V1        -3.064E-03
+
+    TOTAL POWER DISSIPATION   9.22E-02  WATTS
+
+
+**** 05/07/19 07:38:47 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project5\project5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     FOURIER ANALYSIS                 TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+FOURIER COMPONENTS OF TRANSIENT RESPONSE V(OUT)
+
+
+
+ DC COMPONENT =  -4.163593E-02
+
+ HARMONIC   FREQUENCY    FOURIER    NORMALIZED    PHASE        NORMALIZED
+    NO         (HZ)     COMPONENT    COMPONENT    (DEG)       PHASE (DEG)
+
+     1     1.000E+04    1.880E-03    1.000E+00    1.799E+02    0.000E+00
+     2     2.000E+04    9.328E-04    4.963E-01   -1.774E+02   -5.372E+02
+     3     3.000E+04    6.216E-04    3.307E-01   -1.752E+02   -7.150E+02
+     4     4.000E+04    4.665E-04    2.482E-01   -1.733E+02   -8.929E+02
+     5     5.000E+04    3.737E-04    1.988E-01   -1.714E+02   -1.071E+03
+     6     6.000E+04    3.119E-04    1.659E-01   -1.695E+02   -1.249E+03
+     7     7.000E+04    2.678E-04    1.425E-01   -1.677E+02   -1.427E+03
+     8     8.000E+04    2.349E-04    1.250E-01   -1.658E+02   -1.605E+03
+     9     9.000E+04    2.094E-04    1.114E-01   -1.640E+02   -1.783E+03
+
+
+     TOTAL HARMONIC DISTORTION =   7.298047E+01 PERCENT
+
+
+          JOB CONCLUDED
+
+**** 05/07/19 07:38:47 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project5\project5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .20
+

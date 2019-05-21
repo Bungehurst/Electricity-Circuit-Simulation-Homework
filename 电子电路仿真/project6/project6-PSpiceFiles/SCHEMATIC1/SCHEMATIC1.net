@@ -1,0 +1,23 @@
+* source PROJECT6
+R_R4         N00603 N00637  100k  
+R_R5         0 N00742  10k  
+R_R6         OUT1 N00918  10k  
+V_V1         N00590 0 DC 0Vdc AC 10mVac 
+R_R7         N00658 OUT1  100k  
+X_U2B         N01203 N01564 OUT2 VCCP VCCN awbne5532_3 PARAMS:                 
++                  
+R_R8         N00918 N01203  10k  
+X_U1A         N00844 N00603 N00637 VCCP VCCN awbne5532_3 PARAMS:               
++                    
+R_R9         0 N01203  20k  
+R_R10         N01564 0  20k  
+R_R11         OUT2 N01564  20k  
+X_U1B         N00742 N00658 OUT1 VCCP VCCN awbne5532_3 PARAMS:                 
++                  
+C_C1         0 N01203  10n  
+C_C2         0 N00918  10n  
+R_R1         0 N00844  10k  
+V_V2         VCCP 0 15
+R_R2         N00590 N00603  10k  
+V_V3         VCCN 0 -15
+R_R3         N00637 N00658  10k  

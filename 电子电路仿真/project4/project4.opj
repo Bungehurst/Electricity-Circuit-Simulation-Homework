@@ -91,13 +91,13 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\lun55\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4.dsn")
+         "E:\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4.dsn")
       (Path "Design Resources"
-         "C:\Users\lun55\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4.dsn"
+         "E:\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Select "Design Resources"
-         "C:\Users\lun55\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4.dsn"
+         "E:\Desktop\Electricity-Circuit-Simulation\电子电路仿真\project4\project4.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
@@ -108,11 +108,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 133 1749 14 442")
-        (Scroll "-270 118")
-        (Zoom "200")
+        (Placement "44 2 3 -1 -1 -8 -31 52 2227 52 741")
+        (Scroll "-585 -11")
+        (Zoom "135")
         (Occurrence "/"))
       (Path
-         "C:\USERS\LUN55\DESKTOP\ELECTRICITY-CIRCUIT-SIMULATION\电子电路仿真\PROJECT4\PROJECT4.DSN")
+         "E:\DESKTOP\ELECTRICITY-CIRCUIT-SIMULATION\电子电路仿真\PROJECT4\PROJECT4.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))
