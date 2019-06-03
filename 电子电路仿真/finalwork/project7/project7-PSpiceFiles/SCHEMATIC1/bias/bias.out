@@ -1,0 +1,350 @@
+
+**** 06/03/19 23:07:26 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project7\project7-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_10.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 1m 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT7
+X_D3         N65239 N84387 awb1n4728 PARAMS:               
+R_R2         N10029 N09901  10k  
+R_R22         0 N93265  6.8k  
+C_C4         N93553 N94396  0.1u  
+R_R17         N65239 N58209  10k  
+X_U3         N55880 N58209 VCCP VCCN N14960 uA741
+R_R3         N09759 N10029  10k  
+X_U1         N10275 N09901 VCCP VCCN N09759 uA741
+X_D7         N927471 0 awbbzx55c13 PARAMS:               
+R_R4         SIN N09759  10k  
+R_R26         N94510 0  180k  
+R_R5         N10275 0  40k  
+R_R23         N93084 N93360  4.7k  
+R_R20         N92910 N93084  20k  
+C_C3         N58209 N14960  1u  
+C_C1         0 N10275  100n  
+R_R6         N09739 N09759  40k  
+D_D5         N93757 N93553 D1N4148 
+C_C2         N09739 N10275  100n  
+R_R14         0 N55880  100k  
+X_D1         N10029 N09759 awb1n4148 PARAMS:                
+X_D4         0 N84387 awb1n4728 PARAMS:               
+R_R27         N93553 N94396  1meg  
+R_R24         N93553 N93084  180k  
+X_D2         N09759 N10029 awb1n4148 PARAMS:                
+R_R21         N94396 N92910  10k  
+R_R18         N14960 0  50k  
+X_U4         N92910 N93265 VCCP VCCN N93360 uA741
+X_U2         N14960 SIN VCCP VCCN N85366 uA741
+R_R19         N85366 N65239  100k  
+X_D6         N927471 N93084 awbbzx55c13 PARAMS:               
+X_U5         N94510 N93553 VCCP VCCN N94396 uA741
+V_V1         VCCP 0 +15V
+R_R1         0 N09901  8.4k  
+V_V2         VCCN 0 -15V
+R_R25         N93757 N93084  2.2k  
+
+**** RESUMING bias.cir ****
+.END
+
+**** 06/03/19 23:07:26 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project7\project7-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         X_U3.dx         X_U3.dy         X_U1.dx         
+          IS    2.682000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.836                                                        
+         ISR    1.565000E-09                                                 
+         IKF     .04417                                                      
+          BV  100                                                            
+         IBV  100.000000E-06                                                 
+          RS     .5664          1               1.000000E-03    1            
+          TT   11.540000E-09                                                 
+         CJO    4.000000E-12                   10.000000E-12                 
+          VJ     .5                                                          
+           M     .3333                                                       
+
+
+               X_U1.dy         X_D1.model22    X_D2.model22    X_U4.dx         
+          IS  800.000000E-18    1.000000E-09    1.000000E-09  800.000000E-18 
+           N                    1.55            1.55                         
+          BV                  120             120                            
+         IBV                    1               1                            
+          RS    1.000000E-03     .5              .5             1            
+          TT                    5.000000E-09    5.000000E-09                 
+         CJO   10.000000E-12    1.850000E-12    1.850000E-12                 
+          VJ                     .65             .65                         
+           M                     .18             .18                         
+
+
+               X_U4.dy         X_U2.dx         X_U2.dy         X_U5.dx         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03    1            
+         CJO   10.000000E-12                   10.000000E-12                 
+
+
+               X_U5.dy         
+          IS  800.000000E-18 
+          RS    1.000000E-03 
+         CJO   10.000000E-12 
+
+
+**** 06/03/19 23:07:26 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project7\project7-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.qx         X_U1.qx         X_U4.qx         X_U2.qx         
+               NPN             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75           93.75           93.75         
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.42            2.42         
+           D     .87             .87             .87             .87         
+
+
+               X_U5.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 06/03/19 23:07:26 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project7\project7-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  SIN)    -.0099  ( VCCN)  -15.0000  ( VCCP)   15.0000  (N09739)    -.0091     
+
+(N09759)    -.0091 (N09901)    -.0032 (N10029)    -.0061 (N10275)    -.0032     
+
+(N14960)    -.0099 (N55880)    -.0080 (N58209)    -.0080 (N65239)    -.0072     
+
+(N84387)    -.0036 (N85366)    -.0147 (N92910)-561.7E-06 (N93084)    -.0030     
+
+(N93265)-542.4E-06 (N93360)    -.0033 (N93553)    -.0143 (N93757)    -.0030     
+
+(N94396)     .0015 (N94510)    -.0143 (X_U1.6) 862.3E-09 (X_U1.7)    -.0091     
+
+(X_U1.8)    -.0091 (X_U1.9)    0.0000 (X_U2.6) 1.383E-06 (X_U2.7)    -.0147     
+
+(X_U2.8)    -.0147 (X_U2.9)    0.0000 (X_U3.6) 937.9E-09 (X_U3.7)    -.0099     
+
+(X_U3.8)    -.0099 (X_U3.9)    0.0000 (X_U4.6) 310.6E-09 (X_U4.7)    -.0033     
+
+(X_U4.8)    -.0033 (X_U4.9)    0.0000 (X_U5.6)-141.2E-09 (X_U5.7)     .0015     
+
+(X_U5.8)     .0015 (X_U5.9)    0.0000 (N927471)    -.0039                       
+
+(X_U1.10)    -.6109                   (X_U1.11)   14.9600                       
+
+(X_U1.12)   14.9600                   (X_U1.13)    -.5970                       
+
+(X_U1.14)    -.5970                   (X_U1.53)   14.0000                       
+
+(X_U1.54)  -14.0000                   (X_U1.90)-217.8E-06                       
+
+(X_U1.91)   40.0000                   (X_U1.92)  -40.0000                       
+
+(X_U1.99)    0.0000                   (X_U2.10)    -.6176                       
+
+(X_U2.11)   14.9600                   (X_U2.12)   14.9600                       
+
+(X_U2.13)    -.6037                   (X_U2.14)    -.6037                       
+
+(X_U2.53)   14.0000                   (X_U2.54)  -14.0000                       
+
+(X_U2.90)-75.11E-06                   (X_U2.91)   40.0000                       
+
+(X_U2.92)  -40.0000                   (X_U2.99)    0.0000                       
+
+(X_U3.10)    -.6156                   (X_U3.11)   14.9600                       
+
+(X_U3.12)   14.9600                   (X_U3.13)    -.6018                       
+
+(X_U3.14)    -.6018                   (X_U3.53)   14.0000                       
+
+(X_U3.54)  -14.0000                   (X_U3.90)-119.0E-06                       
+
+(X_U3.91)   40.0000                   (X_U3.92)  -40.0000                       
+
+(X_U3.99)    0.0000                   (X_U4.10)    -.6082                       
+
+(X_U4.11)   14.9600                   (X_U4.12)   14.9600                       
+
+(X_U4.13)    -.5943                   (X_U4.14)    -.5944                       
+
+(X_U4.53)   14.0000                   (X_U4.54)  -14.0000                       
+
+(X_U4.90)-58.65E-06                   (X_U4.91)   40.0000                       
+
+(X_U4.92)  -40.0000                   (X_U4.99)    0.0000                       
+
+(X_U5.10)    -.6220                   (X_U5.11)   14.9600                       
+
+(X_U5.12)   14.9600                   (X_U5.13)    -.6081                       
+
+(X_U5.14)    -.6081                   (X_U5.53)   14.0000                       
+
+(X_U5.54)  -14.0000                   (X_U5.90) 218.1E-06                       
+
+(X_U5.91)   40.0000                   (X_U5.92)  -40.0000                       
+
+(X_U5.99)    0.0000                   (X_D3.xinst1n4728.1)   -2.7856            
+
+(X_D3.xinst1n4728.3)    2.7820        (X_D3.xinst1n4728.9)    -.0072            
+
+(X_D4.xinst1n4728.1)   -2.7856        (X_D4.xinst1n4728.3)    2.7820            
+
+(X_D4.xinst1n4728.9)-27.29E-15        (X_D6.xinstbzx55c13.1)  -12.5280          
+
+(X_D6.xinstbzx55c13.3)   12.5250      (X_D6.xinstbzx55c13.9)    -.0039          
+
+(X_D7.xinstbzx55c13.1)  -12.5250      (X_D7.xinstbzx55c13.3)   12.5250          
+
+(X_D7.xinstbzx55c13.9)    -.0039      
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.335E-03
+    V_V2         8.336E-03
+    X_U3.vb      9.379E-12
+    X_U3.vc      1.401E-11
+    X_U3.ve      1.454E-11
+    X_U3.vlim   -1.190E-07
+    X_U3.vlp    -4.000E-11
+    X_U3.vln    -4.000E-11
+    X_U1.vb      8.623E-12
+    X_U1.vc      1.401E-11
+    X_U1.ve      1.454E-11
+    X_U1.vlim   -2.178E-07
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+    X_U4.vb      3.106E-12
+    X_U4.vc      1.400E-11
+    X_U4.ve      1.455E-11
+    X_U4.vlim   -5.865E-08
+    X_U4.vlp    -4.000E-11
+    X_U4.vln    -4.000E-11
+    X_U2.vb      1.383E-11
+    X_U2.vc      1.402E-11
+    X_U2.ve      1.454E-11
+    X_U2.vlim   -7.511E-08
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+    X_U5.vb     -1.412E-12
+    X_U5.vc      1.400E-11
+    X_U5.ve      1.455E-11
+    X_U5.vlim    2.181E-07
+    X_U5.vlp    -4.000E-11
+    X_U5.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   2.50E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/03/19 23:07:26 ******* PSpice 10.5.0 (Jan 2005) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\DPL\Desktop\project7\project7-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.42
+

@@ -1,0 +1,37 @@
+* source PROJECT7
+X_D3         N65239 N84387 awb1n4728 PARAMS:               
+R_R2         N10029 N09901  10k  
+R_R22         0 N93265  6.8k  
+C_C4         N93553 N94396  0.1u  
+R_R17         N65239 N58209  10k  
+X_U3         N55880 N58209 VCCP VCCN N14960 uA741
+R_R3         N09759 N10029  10k  
+X_U1         N10275 N09901 VCCP VCCN N09759 uA741
+X_D7         N927471 0 awbbzx55c13 PARAMS:               
+R_R4         SIN N09759  10k  
+R_R26         N94510 0  180k  
+R_R5         N10275 0  40k  
+R_R23         N93084 N93360  4.7k  
+R_R20         N92910 N93084  20k  
+C_C3         N58209 N14960  1u  
+C_C1         0 N10275  100n  
+R_R6         N09739 N09759  40k  
+D_D5         N93757 N93553 D1N4148 
+C_C2         N09739 N10275  100n  
+R_R14         0 N55880  100k  
+X_D1         N10029 N09759 awb1n4148 PARAMS:                
+X_D4         0 N84387 awb1n4728 PARAMS:               
+R_R27         N93553 N94396  1meg  
+R_R24         N93553 N93084  180k  
+X_D2         N09759 N10029 awb1n4148 PARAMS:                
+R_R21         N94396 N92910  10k  
+R_R18         N14960 0  50k  
+X_U4         N92910 N93265 VCCP VCCN N93360 uA741
+X_U2         N14960 SIN VCCP VCCN N85366 uA741
+R_R19         N85366 N65239  100k  
+X_D6         N927471 N93084 awbbzx55c13 PARAMS:               
+X_U5         N94510 N93553 VCCP VCCN N94396 uA741
+V_V1         VCCP 0 +15V
+R_R1         0 N09901  8.4k  
+V_V2         VCCN 0 -15V
+R_R25         N93757 N93084  2.2k  

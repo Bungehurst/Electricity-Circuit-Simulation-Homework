@@ -1,0 +1,6 @@
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\diode.lib, offset=19469, size=328
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\diz.lib, offset=89542, size=593
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\diz.lib, offset=199533, size=640
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\opamp.lib, offset=103950, size=1153
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\di.lib, offset=33880, size=610
+ lib=C:\OrCAD\OrCAD_10.5\tools\PSpice\Library\templates.lib, offset=13100, size=8774
